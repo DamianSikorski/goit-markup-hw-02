@@ -4,62 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>WebStudio</title>
   </head>
   <body>
     <header>
       <nav>
-        <a href="link"><h2>WebStudio</h2></a>
+        <a href="link"
+          ><h2 class="logo"><span class="logo-color">Web</span>Studio</h2></a
+        >
         <ul>
-          <li><a href="link">Agencja</a></li>
-          <li><a href="link">Portfolio</a></li>
-          <li><a href="link">Kontakt</a></li>
+          <li><a class="agency" href="link">Agencja</a></li>
+          <li><a class="portfolio" href="link">Portfolio</a></li>
+          <li><a class="contact" href="link">Kontakt</a></li>
         </ul>
       </nav>
       <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+        <li>
+          <a class="email-in-header" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="tel-number-in-header" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
       </ul>
     </header>
     <main>
-      <div>
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button">Zamów usługe</button>
-      </div>
-      <div>
+      <section class="first-section">
+        <h1 class="primary-header">
+          EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+        </h1>
+        <button class="button" type="button">Zamów usługe</button>
+      </section>
+      <section>
         <ul>
           <li>
-            <h4>LOREM IPSUM</h4>
-            <p>
+            <h4 class="small-headers">LOREM IPSUM</h4>
+            <p class="descriptions">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h4>LOREM IPSUM</h4>
-            <p>
+            <h4 class="small-headers">LOREM IPSUM</h4>
+            <p class="descriptions">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h4>LOREM IPSUM</h4>
-            <p>
+            <h4 class="small-headers">LOREM IPSUM</h4>
+            <p class="descriptions">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h4>LOREM IPSUM</h4>
-            <p>
+            <h4 class="small-headers">LOREM IPSUM</h4>
+            <p class="descriptions">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
         </ul>
-      </div>
-      <div>
-        <h2>Czym się zajmujemy</h2>
+      </section>
+      <section>
+        <h2 class="secondary-header">Czym się zajmujemy</h2>
         <ul>
           <li>
             <img
@@ -86,9 +105,9 @@
             />
           </li>
         </ul>
-      </div>
-      <div>
-        <h2>Nasz zespół</h2>
+      </section>
+      <section class="last-section">
+        <h2 class="last-header">Nasz zespół</h2>
         <ul>
           <li>
             <figure>
@@ -99,8 +118,8 @@
                 height="260"
               />
               <figcaption>
-                <h4>John Doe</h4>
-                <p>Product Designer</p>
+                <h4 class="names">John Doe</h4>
+                <p class="professions">Product Designer</p>
               </figcaption>
             </figure>
           </li>
@@ -113,8 +132,8 @@
                 height="260"
               />
               <figcaption>
-                <h4>John Doe</h4>
-                <p>Frontend Developer</p>
+                <h4 class="names">John Doe</h4>
+                <p class="professions">Frontend Developer</p>
               </figcaption>
             </figure>
           </li>
@@ -127,8 +146,8 @@
                 height="260"
               />
               <figcaption>
-                <h4>John Doe</h4>
-                <p>Marketing</p>
+                <h4 class="names">John Doe</h4>
+                <p class="professions">Marketing</p>
               </figcaption>
             </figure>
           </li>
@@ -141,23 +160,33 @@
                 height="260"
               />
               <figcaption>
-                <h4>John Doe</h4>
-                <p>UI designer</p>
+                <h4 class="names">John Doe</h4>
+                <p class="professions">UI designer</p>
               </figcaption>
             </figure>
           </li>
         </ul>
-      </div>
+      </section>
     </main>
     <footer>
       <h2>
-        <a href="link">WebStudio</a>
+        <a href="link"
+          ><h2 class="logo-in-footer">
+            <span class="logo-color">Web</span>Studio
+          </h2></a
+        >
       </h2>
       <address>
         <ul>
-          <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+          <li class="street">m. Warszawa, Aleje Jerozolimskie 21</li>
+          <li>
+            <a class="email-in-footer" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+          <li>
+            <a class="tel-in-footer" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
         </ul>
       </address>
     </footer>
