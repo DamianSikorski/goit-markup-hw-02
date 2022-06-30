@@ -1,6 +1,6 @@
 body {
-  font-family: "Roboto", "Helvetica Neue", "Verdana", "Tahoma" sans-serif;
-  color: var ();
+  font-family: "Roboto", sans-serif;
+  color: var(--black-color);
 }
 a {
   text-decoration: none;
@@ -32,7 +32,7 @@ header {
 .agency {
   font-weight: 500;
   font-size: 14px;
-  color: var(--blue-color);
+  color: var(--black-color);
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
@@ -53,7 +53,7 @@ header {
 .email-in-header {
   font-weight: 500;
   font-size: 14px;
-  color: var(--blue-color);
+  color: var(--grey-color);
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
@@ -63,6 +63,14 @@ header {
   color: #757575;
   letter-spacing: 0.02em;
   line-height: 1.14;
+}
+.navigation-links a:hover,
+.navigation-links a:focus:focus {
+  color: var(--blue-color);
+}
+.navigation-contacts a:hover,
+.navigation-contacts a:focus {
+  color: var(--blue-color);
 }
 /* koniec sekcji*/
 
@@ -88,7 +96,9 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-/*druga sekcja*/
+/*druga sekcja
+
+*/
 .small-headers {
   font-weight: 700;
   font-size: 14px;
@@ -107,7 +117,10 @@ button {
 .last-section {
   background: var(--last-section-color);
 }
-/*czwarta sekcja*/
+/*czwarta sekcja
+
+
+*/
 .last-header {
   font-weight: 700;
   font-size: 36px;
@@ -118,13 +131,25 @@ button {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .professions {
   color: var(--grey-color);
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
-/* sekcja footer*/
+.images-subsections {
+  width: 270px;
+  height: 368px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+/* sekcja footer
+
+*/
 footer {
   background: var(--navy-color);
 }
@@ -146,14 +171,23 @@ footer {
   font-style: normal;
   font-size: 14px;
   font-weight: 400;
-  color: var(--grey-color);
+  color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
   line-height: 1.71;
 }
 .tel-in-footer {
   font-style: normal;
-  color: var(--grey-color);
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
+.footer-links a:hover,
+.footer-links a:focus {
+  color: var(--blue-color);
+}
+
+/* tu się zaczyna część, która opisuje stronę "portfolio"
+
+
+*/
