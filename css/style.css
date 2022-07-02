@@ -9,8 +9,8 @@ a {
   --white-color: #ffffff;
   --black-color: #212121;
   --blue-color: #2196f3;
-  --grey-color: #757575;
-  --last-section-color: #e5e5e5;
+  --grey-text-color: #757575;
+  --grey-background-color: #f5f4fa;
   --navy-color: #2f303a;
 }
 
@@ -85,15 +85,13 @@ header {
   line-height: 1.36;
   color: var(--white-color);
 }
-button {
+.button-in-main-page {
+  width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   background-color: var(--blue-color);
   color: var(--white-color);
-  width: 200px;
-  height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   cursor: pointer;
 }
 /*druga sekcja
@@ -114,13 +112,14 @@ button {
   font-weight: 700;
   font-size: 36px;
 }
-.last-section {
-  background: var(--last-section-color);
-}
+
 /*czwarta sekcja
 
 
 */
+.last-section {
+  background: var(--grey-background-color);
+}
 .last-header {
   font-weight: 700;
   font-size: 36px;
@@ -139,13 +138,13 @@ button {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.images-subsections {
+.team-list figure {
   width: 270px;
   height: 368px;
-  background: #ffffff;
+  background: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 /* sekcja footer
 
@@ -154,6 +153,7 @@ footer {
   background: var(--navy-color);
 }
 .logo-in-footer {
+  font-family: "Raleway";
   color: var(--white-color);
   font-weight: 700;
   font-size: 26px;
@@ -182,12 +182,89 @@ footer {
   font-size: 14px;
   line-height: 1.71;
 }
-.footer-links a:hover,
-.footer-links a:focus {
+.email-in-footer:hover,
+.email-in-footer:focus {
+  color: var(--blue-color);
+}
+.tel-in-footer:hover,
+.tel-in-footer:focus {
   color: var(--blue-color);
 }
 
 /* tu się zaczyna część, która opisuje stronę "portfolio"
 
-
+do header i footer został wykorzystane te same style co do strony głównej
 */
+
+/* stylizacja przycisków*/
+.all-button {
+  width: 121px;
+  height: 38px;
+  background: var(--grey-background-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.sites-button {
+  width: 93px;
+  height: 38px;
+  background: var(--grey-background-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.apps-button {
+  width: 114px;
+  height: 38px;
+  background: var(--grey-background-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.design-button {
+  width: 91px;
+  height: 38px;
+  background: var(--grey-background-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.marketing-button {
+  width: 121px;
+  height: 38px;
+  background: var(--grey-background-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.filter-buttons button:hover {
+  background: var(--blue-color);
+  color: var(--white-color);
+}
+.filter-buttons button {
+  cursor: pointer;
+}
+.first-list figure,
+.second-list figure,
+.third-list figure {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eeeeee;
+}
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+.work-in-project {
+  color: #757575;
+}
