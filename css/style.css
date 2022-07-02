@@ -13,7 +13,7 @@ body {
 }
 
 /* początek sekcji header*/
-header-section {
+.header-section {
   background: var(--white-color);
 }
 
