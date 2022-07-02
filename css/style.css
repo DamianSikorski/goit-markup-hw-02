@@ -2,21 +2,23 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--black-color);
 }
-a {
-  text-decoration: none;
-}
+
 :root {
   --white-color: #ffffff;
   --black-color: #212121;
-  --blue-color: #2196f3;
-  --grey-text-color: #757575;
-  --grey-background-color: #f5f4fa;
-  --navy-color: #2f303a;
+  --first-brand-color: #2196f3;
+  --paragraph-color: #757575;
+  --brand-background-color: #f5f4fa;
+  --second-brand-color: #2f303a;
 }
 
 /* początek sekcji header*/
-header {
+header-section {
   background: var(--white-color);
+}
+
+header a {
+  text-decoration: none;
 }
 .logo {
   font-family: "Raleway";
@@ -27,7 +29,7 @@ header {
   line-height: 1.19;
 }
 .logo-color {
-  color: var(--blue-color);
+  color: var(--first-brand-color);
 }
 .agency {
   font-weight: 500;
@@ -53,30 +55,30 @@ header {
 .email-in-header {
   font-weight: 500;
   font-size: 14px;
-  color: var(--grey-color);
+  color: var(--paragraph-color);
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
 .tel-number-in-header {
   font-weight: 500;
   font-size: 14px;
-  color: #757575;
+  color: var(--paragraph-color);
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
 .navigation-links a:hover,
 .navigation-links a:focus:focus {
-  color: var(--blue-color);
+  color: var(--first-brand-color);
 }
 .navigation-contacts a:hover,
 .navigation-contacts a:focus {
-  color: var(--blue-color);
+  color: var(--first-brand-color);
 }
 /* koniec sekcji*/
 
 /*pierwsza sekcja*/
 .first-section {
-  background: var(--navy-color);
+  background: var(--second-brand-color);
 }
 
 .primary-header {
@@ -90,7 +92,7 @@ header {
   height: 50px;
   font-weight: 700;
   font-size: 16px;
-  background-color: var(--blue-color);
+  background-color: var(--first-brand-color);
   color: var(--white-color);
   cursor: pointer;
 }
@@ -104,7 +106,7 @@ header {
 }
 .descriptions {
   font-size: 14px;
-  color: #757575;
+  color: var(--paragraph-color);
   line-height: 1.71;
 }
 /*trzecia sekcja*/
@@ -118,7 +120,7 @@ header {
 
 */
 .last-section {
-  background: var(--grey-background-color);
+  background: var(--brand-background-color);
 }
 .last-header {
   font-weight: 700;
@@ -133,7 +135,7 @@ header {
   text-align: center;
 }
 .professions {
-  color: var(--grey-color);
+  color: var(--paragraph-color);
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
@@ -149,8 +151,11 @@ header {
 /* sekcja footer
 
 */
-footer {
-  background: var(--navy-color);
+.footer-section {
+  background: var(--second-brand-color);
+}
+footer a {
+  text-decoration: none;
 }
 .logo-in-footer {
   font-family: "Raleway";
@@ -161,7 +166,6 @@ footer {
 .street {
   font-style: normal;
   font-size: 14px;
-  font-weight: 400;
   color: var(--white-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -170,7 +174,6 @@ footer {
 .email-in-footer {
   font-style: normal;
   font-size: 14px;
-  font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
   line-height: 1.71;
@@ -184,11 +187,11 @@ footer {
 }
 .email-in-footer:hover,
 .email-in-footer:focus {
-  color: var(--blue-color);
+  color: var(--first-brand-color);
 }
 .tel-in-footer:hover,
 .tel-in-footer:focus {
-  color: var(--blue-color);
+  color: var(--first-brand-color);
 }
 
 /* tu się zaczyna część, która opisuje stronę "portfolio"
@@ -200,7 +203,7 @@ do header i footer został wykorzystane te same style co do strony głównej
 .all-button {
   width: 121px;
   height: 38px;
-  background: var(--grey-background-color);
+  background: var(--brand-background-color);
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -210,7 +213,7 @@ do header i footer został wykorzystane te same style co do strony głównej
 .sites-button {
   width: 93px;
   height: 38px;
-  background: var(--grey-background-color);
+  background: var(--brand-background-color);
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -220,7 +223,7 @@ do header i footer został wykorzystane te same style co do strony głównej
 .apps-button {
   width: 114px;
   height: 38px;
-  background: var(--grey-background-color);
+  background: var(--brand-background-color);
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -230,7 +233,7 @@ do header i footer został wykorzystane te same style co do strony głównej
 .design-button {
   width: 91px;
   height: 38px;
-  background: var(--grey-background-color);
+  background: var(--brand-background-color);
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -240,15 +243,16 @@ do header i footer został wykorzystane te same style co do strony głównej
 .marketing-button {
   width: 121px;
   height: 38px;
-  background: var(--grey-background-color);
+  background: var(--brand-background-color);
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.filter-buttons button:hover {
-  background: var(--blue-color);
+.filter-buttons button:hover,
+.filter-buttons button:focus {
+  background: var(--first-brand-color);
   color: var(--white-color);
 }
 .filter-buttons button {
@@ -265,6 +269,6 @@ do header i footer został wykorzystane te same style co do strony głównej
   font-weight: 700;
   font-size: 18px;
 }
-.work-in-project {
-  color: #757575;
+.role-in-project {
+  color: var(--paragraph-color);
 }
