@@ -79,6 +79,8 @@ header a {
 /*pierwsza sekcja*/
 .first-section {
   background: var(--second-brand-color);
+  width: 1600px;
+  height: 600px;
 }
 
 .primary-header {
@@ -151,6 +153,8 @@ header a {
 */
 .footer-section {
   background: var(--second-brand-color);
+  width: 1600px;
+  height: 252px;
 }
 footer a {
   text-decoration: none;
