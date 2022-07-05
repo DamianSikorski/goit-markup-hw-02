@@ -209,6 +209,7 @@ do header i footer został wykorzystane te same style co do strony głównej
   font-size: 16px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .portfolio-buttons:hover,
@@ -216,9 +217,7 @@ do header i footer został wykorzystane te same style co do strony głównej
   background: var(--first-brand-color);
   color: var(--white-color);
 }
-.portfolio-buttons {
-  cursor: pointer;
-}
+
 .first-list figure,
 .second-list figure,
 .third-list figure {
